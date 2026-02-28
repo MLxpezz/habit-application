@@ -1,15 +1,13 @@
-package com.habit.management.entity;
+package com.habit.management.model.entity;
 
 import com.habit.management.enums.HabitTypeEnum;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

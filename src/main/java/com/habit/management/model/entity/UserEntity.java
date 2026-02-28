@@ -1,15 +1,15 @@
-package com.habit.management.entity;
+package com.habit.management.model.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 
+@Builder
+@EqualsAndHashCode(exclude = {"roles", "habits"})
+@ToString(exclude = {"roles", "habits"})
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -34,10 +34,10 @@ public class UserEntity {
     private LocalDateTime updatedAt;
 
     @Column(name = "current_streak")
-    private int currentStreak;
+    private int currentStreak = 0;
 
     @Column(name = "max_streak")
-    private int maxStreak;
+    private int maxStreak = 0;
 
     @ManyToMany(
             fetch = FetchType.LAZY
@@ -58,5 +58,10 @@ public class UserEntity {
     @PrePersist
     private void prePersis() {
         this.createdAt = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    private void preUpdate() {
+        this.updatedAt = LocalDateTime.now();
     }
 }
