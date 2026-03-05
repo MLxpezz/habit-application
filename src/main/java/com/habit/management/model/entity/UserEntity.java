@@ -39,6 +39,9 @@ public class UserEntity {
     @Column(name = "max_streak")
     private int maxStreak = 0;
 
+    @Column(name = "is_enabled")
+    private boolean isEnabled;
+
     @ManyToMany(
             fetch = FetchType.LAZY
     )
