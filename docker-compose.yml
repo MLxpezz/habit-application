@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: habit-app_postgresdb
+    restart: always
+    environment:
+      POSTGRES_DB: db_habit_app
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_USER: admin123
+    ports:
+      - "15432:5432"
