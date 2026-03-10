@@ -1,6 +1,6 @@
 package com.habit.management.service.impl;
 
-import com.habit.management.enums.ApiErrorMessageEnum;
+import com.habit.management.global.enums.ApiErrorMessageEnum;
 import com.habit.management.model.entity.UserEntity;
 import com.habit.management.repository.UserRepository;
 import org.jspecify.annotations.NonNull;

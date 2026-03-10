@@ -1,8 +1,8 @@
 package com.habit.management.service.impl;
 
-import com.habit.management.enums.ApiErrorMessageEnum;
-import com.habit.management.enums.ApiSuccessfullyMessageEnum;
-import com.habit.management.enums.RoleEnum;
+import com.habit.management.global.enums.ApiErrorMessageEnum;
+import com.habit.management.global.enums.ApiSuccessfullyMessageEnum;
+import com.habit.management.model.enums.RoleEnum;
 import com.habit.management.model.dto.UserDto;
 import com.habit.management.model.entity.RoleEntity;
 import com.habit.management.model.entity.UserEntity;

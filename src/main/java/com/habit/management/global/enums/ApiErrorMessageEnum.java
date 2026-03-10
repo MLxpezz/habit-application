@@ -1,4 +1,4 @@
-package com.habit.management.enums;
+package com.habit.management.global.enums;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;

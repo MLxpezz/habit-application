@@ -1,6 +1,6 @@
 package com.habit.management.repository;
 
-import com.habit.management.enums.RoleEnum;
+import com.habit.management.model.enums.RoleEnum;
 import com.habit.management.model.entity.RoleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

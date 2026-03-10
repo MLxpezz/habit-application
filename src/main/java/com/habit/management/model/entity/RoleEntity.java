@@ -1,6 +1,6 @@
 package com.habit.management.model.entity;
 
-import com.habit.management.enums.RoleEnum;
+import com.habit.management.model.enums.RoleEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
